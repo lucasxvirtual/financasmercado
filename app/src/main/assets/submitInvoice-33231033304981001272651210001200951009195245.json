@@ -1,0 +1,229 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231033304981001272651210001200951009195245",
+      "date": "2023-10-22T13:05:48-03:00",
+      "market": {
+        "cnpj": "33304981001272",
+        "name": "SUPERMERCADOS MUNDIAL LTDA",
+        "fantasyName": "SUPERMERCADOS MUNDIAL - BOTAFOGO",
+        "address": {
+          "name": "Rua Voluntarios da Patria, 24",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22270010",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "0021317003"
+      },
+      "products": [
+        {
+          "id": 198,
+          "product": {
+            "id": 105,
+            "eanCode": "07898506328437",
+            "name": "PEITO FGO NAT DESFIADO 400G",
+            "unitType": "UN"
+          },
+          "price": 14.88,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 199,
+          "product": {
+            "id": 106,
+            "eanCode": "00000000096027",
+            "name": "QJO MINAS FRESCO VITORIA GRANEL KG",
+            "unitType": "KG"
+          },
+          "price": 33.9,
+          "quantity": 0.278,
+          "discount": 0.0
+        },
+        {
+          "id": 200,
+          "product": {
+            "id": 107,
+            "eanCode": "07896625210732",
+            "name": "IOG.NATURAL VIV MEL 150G",
+            "unitType": "UN"
+          },
+          "price": 3.3,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 201,
+          "product": {
+            "id": 107,
+            "eanCode": "07896625210732",
+            "name": "IOG.NATURAL VIV MEL 150G",
+            "unitType": "UN"
+          },
+          "price": 3.3,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 202,
+          "product": {
+            "id": 108,
+            "eanCode": "07899943703511",
+            "name": "CASTANHAS AMIGOS DO BEM MIX 100G",
+            "unitType": "UN"
+          },
+          "price": 15.5,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 203,
+          "product": {
+            "id": 109,
+            "eanCode": "07892840268145",
+            "name": "BISC.E.CHIPS EQLIBRI PANETINI COTTAGEERVA 40G",
+            "unitType": "UN"
+          },
+          "price": 4.95,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 204,
+          "product": {
+            "id": 110,
+            "eanCode": "07898295160126",
+            "name": "MORANGO NIPO BDJ 250G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 205,
+          "product": {
+            "id": 111,
+            "eanCode": "07891025115304",
+            "name": "IOG.ZEROLAC YOPRO 15 PT BANAMENDOIM 160G",
+            "unitType": "UN"
+          },
+          "price": 9.75,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 206,
+          "product": {
+            "id": 49,
+            "eanCode": "07891331010546",
+            "name": "BARRA CEREAIS NUTRY AVELACHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 207,
+          "product": {
+            "id": 49,
+            "eanCode": "07891331010546",
+            "name": "BARRA CEREAIS NUTRY AVELACHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 208,
+          "product": {
+            "id": 50,
+            "eanCode": "07891331010560",
+            "name": "BARRA CEREAIS NUTRY MORANGOCHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 209,
+          "product": {
+            "id": 50,
+            "eanCode": "07891331010560",
+            "name": "BARRA CEREAIS NUTRY MORANGOCHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 210,
+          "product": {
+            "id": 51,
+            "eanCode": "07896006797944",
+            "name": "FEIJAO PRETO CAMIL 380G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 211,
+          "product": {
+            "id": 51,
+            "eanCode": "07896006797944",
+            "name": "FEIJAO PRETO CAMIL 380G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 212,
+          "product": {
+            "id": 112,
+            "eanCode": "07896006715160",
+            "name": "FEIJAO BRANCO CAMIL 247G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 213,
+          "product": {
+            "id": 112,
+            "eanCode": "07896006715160",
+            "name": "FEIJAO BRANCO CAMIL 247G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 214,
+          "product": {
+            "id": 51,
+            "eanCode": "07896006797944",
+            "name": "FEIJAO PRETO CAMIL 380G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

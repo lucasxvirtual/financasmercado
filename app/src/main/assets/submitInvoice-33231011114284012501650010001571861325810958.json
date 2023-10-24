@@ -1,0 +1,73 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231011114284012501650010001571861325810958",
+      "date": "2023-10-02T17:45:18-03:00",
+      "market": {
+        "cnpj": "11114284012501",
+        "name": "Casa e Video Brasil S/A",
+        "fantasyName": "BOTAFOGO PRAIA",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 000348 LJ A LJ B VISC",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIIO DE JANEIIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "02122222222"
+      },
+      "products": [
+        {
+          "id": 92,
+          "product": {
+            "id": 54,
+            "eanCode": "7908227910702",
+            "name": "CONCHA SILIC EASY CV",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 93,
+          "product": {
+            "id": 55,
+            "eanCode": "7622300807399",
+            "name": "CX BOMB BIS LACTA 12",
+            "unitType": "UN"
+          },
+          "price": 7.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 94,
+          "product": {
+            "id": 56,
+            "eanCode": "7896502829941",
+            "name": "LEITEIRA 14 AA GARLI",
+            "unitType": "UN"
+          },
+          "price": 39.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 95,
+          "product": {
+            "id": 57,
+            "eanCode": "7891008414127",
+            "name": "BOMBOM SERENATA AMOR",
+            "unitType": "UN"
+          },
+          "price": 1.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

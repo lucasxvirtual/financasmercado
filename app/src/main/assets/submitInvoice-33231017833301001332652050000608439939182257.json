@@ -1,0 +1,277 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652050000608439939182257",
+      "date": "2023-10-03T08:52:55-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 96,
+          "product": {
+            "id": 47,
+            "eanCode": null,
+            "name": "BANANA PRATA",
+            "unitType": "KG"
+          },
+          "price": 4.85,
+          "quantity": 1.215,
+          "discount": 0.0
+        },
+        {
+          "id": 97,
+          "product": {
+            "id": 58,
+            "eanCode": null,
+            "name": "ALFACE CRESPA UN",
+            "unitType": "UN"
+          },
+          "price": 0.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 98,
+          "product": {
+            "id": 59,
+            "eanCode": null,
+            "name": "CEBOLA ROXA kg",
+            "unitType": "KG"
+          },
+          "price": 9.9,
+          "quantity": 0.22,
+          "discount": 0.0
+        },
+        {
+          "id": 99,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.99,
+          "quantity": 0.785,
+          "discount": 0.0
+        },
+        {
+          "id": 100,
+          "product": {
+            "id": 42,
+            "eanCode": null,
+            "name": "BROCOLIS AMERICANO UN",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 101,
+          "product": {
+            "id": 43,
+            "eanCode": "7891000104613",
+            "name": "IOGURTE GREGO NESTLE BDJ 360G LIGHT MARACUJA",
+            "unitType": "UN"
+          },
+          "price": 9.15,
+          "quantity": 3.0,
+          "discount": 0.0
+        },
+        {
+          "id": 102,
+          "product": {
+            "id": 60,
+            "eanCode": "630941389652",
+            "name": "TOMATE CEREJA PURA VIDA CX 180G VERMELHO",
+            "unitType": "UN"
+          },
+          "price": 3.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 103,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 3.79,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 104,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 3.79,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 105,
+          "product": {
+            "id": 61,
+            "eanCode": null,
+            "name": "PEITO FRANGO DEFUMADO SEARA EMB kg",
+            "unitType": "KG"
+          },
+          "price": 33.99,
+          "quantity": 0.105,
+          "discount": 0.0
+        },
+        {
+          "id": 106,
+          "product": {
+            "id": 62,
+            "eanCode": null,
+            "name": "PRESUNTO COZIDO PERDIGAO S/CAPA FATIADO BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 29.99,
+          "quantity": 0.125,
+          "discount": 0.0
+        },
+        {
+          "id": 107,
+          "product": {
+            "id": 63,
+            "eanCode": "7896353302075",
+            "name": "REQUEIJAO CREM CATUPIRY PT 420G LIGHT",
+            "unitType": "UN"
+          },
+          "price": 17.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 108,
+          "product": {
+            "id": 25,
+            "eanCode": "78909045",
+            "name": "REFRIG COCA COLA GF 250ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 1.89,
+          "quantity": 12.0,
+          "discount": 0.0
+        },
+        {
+          "id": 109,
+          "product": {
+            "id": 64,
+            "eanCode": null,
+            "name": "ALCATRA BOV BIFE BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 38.98,
+          "quantity": 0.27,
+          "discount": 0.0
+        },
+        {
+          "id": 110,
+          "product": {
+            "id": 64,
+            "eanCode": null,
+            "name": "ALCATRA BOV BIFE BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 38.98,
+          "quantity": 0.286,
+          "discount": 0.0
+        },
+        {
+          "id": 111,
+          "product": {
+            "id": 64,
+            "eanCode": null,
+            "name": "ALCATRA BOV BIFE BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 38.98,
+          "quantity": 0.228,
+          "discount": 0.0
+        },
+        {
+          "id": 112,
+          "product": {
+            "id": 64,
+            "eanCode": null,
+            "name": "ALCATRA BOV BIFE BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 38.98,
+          "quantity": 0.256,
+          "discount": 0.0
+        },
+        {
+          "id": 113,
+          "product": {
+            "id": 64,
+            "eanCode": null,
+            "name": "ALCATRA BOV BIFE BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 38.98,
+          "quantity": 0.21,
+          "discount": 0.0
+        },
+        {
+          "id": 114,
+          "product": {
+            "id": 39,
+            "eanCode": "7893000005945",
+            "name": "FILE PEITO FRANGO SADIA PCT 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 115,
+          "product": {
+            "id": 39,
+            "eanCode": "7893000005945",
+            "name": "FILE PEITO FRANGO SADIA PCT 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 116,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 8.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

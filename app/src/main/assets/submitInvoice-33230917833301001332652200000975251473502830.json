@@ -1,0 +1,133 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230917833301001332652200000975251473502830",
+      "date": "2023-09-26T17:01:38-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 23,
+          "product": {
+            "id": 1,
+            "eanCode": "7898939631425",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 24,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 3.9,
+          "quantity": 0.821,
+          "discount": 0.0
+        },
+        {
+          "id": 25,
+          "product": {
+            "id": 16,
+            "eanCode": null,
+            "name": "BOLO CORTE SM CASEIRO kg",
+            "unitType": "KG"
+          },
+          "price": 19.98,
+          "quantity": 0.178,
+          "discount": 0.0
+        },
+        {
+          "id": 26,
+          "product": {
+            "id": 17,
+            "eanCode": "7896002306348",
+            "name": "PAO FORMA PLUS VITA 480G TRAD",
+            "unitType": "UN"
+          },
+          "price": 7.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 27,
+          "product": {
+            "id": 18,
+            "eanCode": "7896051121251",
+            "name": "IOGURTE NAT ITAMBE CP 170G INTEGRAL",
+            "unitType": "UN"
+          },
+          "price": 3.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 28,
+          "product": {
+            "id": 19,
+            "eanCode": "7891048046623",
+            "name": "GELATINA PO DR OETKER CX 12G CEREJA DIET",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 29,
+          "product": {
+            "id": 20,
+            "eanCode": "7891048046661",
+            "name": "GELATINA PO DR OETKER CX 12G UVA DIET",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 30,
+          "product": {
+            "id": 21,
+            "eanCode": "7899970400902",
+            "name": "CHOC BARRA HERSHEYS SP DARK85G 60 CACAU TRADIC",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 31,
+          "product": {
+            "id": 10,
+            "eanCode": null,
+            "name": "MIX VINAGRETE 300G",
+            "unitType": "UN"
+          },
+          "price": 5.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

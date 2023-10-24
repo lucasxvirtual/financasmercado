@@ -1,0 +1,49 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230933438250006955650210000387191864270875",
+      "date": "2023-09-25T12:09:31-03:00",
+      "market": {
+        "cnpj": "33438250006955",
+        "name": "DROGARIAS PACHECO SA",
+        "fantasyName": "",
+        "address": {
+          "name": "PRAIA DE BOTAFOGO, 406",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2132371112"
+      },
+      "products": [
+        {
+          "id": 5,
+          "product": {
+            "id": 5,
+            "eanCode": null,
+            "name": "CHOC KIT KAT 41 5G",
+            "unitType": "UN"
+          },
+          "price": 4.89,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 6,
+          "product": {
+            "id": 6,
+            "eanCode": null,
+            "name": "PILHA DURACELL AAA C4",
+            "unitType": "UN"
+          },
+          "price": 29.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

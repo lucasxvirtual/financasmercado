@@ -1,0 +1,73 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230917833301001332652210000686229063995259",
+      "date": "2023-09-24T17:34:45-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 1,
+          "product": {
+            "id": 1,
+            "eanCode": null,
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 2,
+          "product": {
+            "id": 2,
+            "eanCode": null,
+            "name": "REFRIG FANTA LT 350ML LARANJA GLD",
+            "unitType": "UN"
+          },
+          "price": 4.3,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 3,
+          "product": {
+            "id": 3,
+            "eanCode": "7892840816452",
+            "name": "SALG FANDANGOS ELMA CHIPS 45G QUEIJO",
+            "unitType": "UN"
+          },
+          "price": 3.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 4,
+          "product": {
+            "id": 4,
+            "eanCode": "7892840816438",
+            "name": "SALG FANDANGOS ELMA CHIPS PCT 45G PRESUNTO",
+            "unitType": "UN"
+          },
+          "price": 3.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

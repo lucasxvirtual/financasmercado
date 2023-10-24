@@ -1,0 +1,49 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230933438250006955650210000387831865176458",
+      "date": "2023-09-25T16:30:29-03:00",
+      "market": {
+        "cnpj": "33438250006955",
+        "name": "DROGARIAS PACHECO SA",
+        "fantasyName": "",
+        "address": {
+          "name": "PRAIA DE BOTAFOGO, 406",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2132371112"
+      },
+      "products": [
+        {
+          "id": 38,
+          "product": {
+            "id": 26,
+            "eanCode": null,
+            "name": "CR NIV FAC ANTISS 100G",
+            "unitType": "UN"
+          },
+          "price": 34.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 39,
+          "product": {
+            "id": 27,
+            "eanCode": null,
+            "name": "MANT CACAU FPS8 STK",
+            "unitType": "UN"
+          },
+          "price": 5.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

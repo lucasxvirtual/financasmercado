@@ -1,0 +1,193 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652060000925889641070165",
+      "date": "2023-10-01T18:49:59-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 41,
+          "product": {
+            "id": 29,
+            "eanCode": "7891149108718",
+            "name": "CERV PILSEN CORONA EXTRA LN 330ML",
+            "unitType": "UN"
+          },
+          "price": 6.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 42,
+          "product": {
+            "id": 29,
+            "eanCode": "7891149108718",
+            "name": "CERV PILSEN CORONA EXTRA LN 330ML",
+            "unitType": "UN"
+          },
+          "price": 6.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 43,
+          "product": {
+            "id": 29,
+            "eanCode": "7891149108718",
+            "name": "CERV PILSEN CORONA EXTRA LN 330ML",
+            "unitType": "UN"
+          },
+          "price": 6.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 44,
+          "product": {
+            "id": 30,
+            "eanCode": "7898939631036",
+            "name": "PAO HOT DOG SM PCT 400G",
+            "unitType": "UN"
+          },
+          "price": 5.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 45,
+          "product": {
+            "id": 31,
+            "eanCode": "7896102501896",
+            "name": "MOLHO TOM HEINZ SCH 300G TRAD C/PEDACOS",
+            "unitType": "UN"
+          },
+          "price": 2.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 46,
+          "product": {
+            "id": 32,
+            "eanCode": "7896102503708",
+            "name": "KETCHUP HEINZ 397G TOMATO",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 47,
+          "product": {
+            "id": 33,
+            "eanCode": null,
+            "name": "SALSICHA HOT DOG WILSON kg",
+            "unitType": "KG"
+          },
+          "price": 6.98,
+          "quantity": 0.837,
+          "discount": 0.0
+        },
+        {
+          "id": 48,
+          "product": {
+            "id": 34,
+            "eanCode": "0076840002603",
+            "name": "SORVETE BEN JERRYS PT 458ML DOCE LEITE",
+            "unitType": "UN"
+          },
+          "price": 53.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 49,
+          "product": {
+            "id": 35,
+            "eanCode": "7896102584189",
+            "name": "MAIONESE HEINZ SQZ 215G TRADICIONAL",
+            "unitType": "UN"
+          },
+          "price": 14.39,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 50,
+          "product": {
+            "id": 36,
+            "eanCode": "7891095100729",
+            "name": "PIPOCA P/MICROONDAS YOKI 100G BACON",
+            "unitType": "UN"
+          },
+          "price": 3.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 51,
+          "product": {
+            "id": 36,
+            "eanCode": "7891095100729",
+            "name": "PIPOCA P/MICROONDAS YOKI 100G BACON",
+            "unitType": "UN"
+          },
+          "price": 3.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 52,
+          "product": {
+            "id": 37,
+            "eanCode": "7892840820381",
+            "name": "BAT PALHA ELMA CHIPS 100G TRAD",
+            "unitType": "UN"
+          },
+          "price": 6.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 53,
+          "product": {
+            "id": 17,
+            "eanCode": "7896002306348",
+            "name": "PAO FORMA PLUS VITA 480G TRAD",
+            "unitType": "UN"
+          },
+          "price": 7.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 54,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 5.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,109 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231033304981001272651180001153571006932064",
+      "date": "2023-10-03T17:56:29-03:00",
+      "market": {
+        "cnpj": "33304981001272",
+        "name": "SUPERMERCADOS MUNDIAL LTDA",
+        "fantasyName": "SUPERMERCADOS MUNDIAL - BOTAFOGO",
+        "address": {
+          "name": "Rua Voluntarios da Patria, 24",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22270010",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "0021317003"
+      },
+      "products": [
+        {
+          "id": 85,
+          "product": {
+            "id": 49,
+            "eanCode": "07891331010546",
+            "name": "BARRA CEREAIS NUTRY AVELACHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 86,
+          "product": {
+            "id": 50,
+            "eanCode": "07891331010560",
+            "name": "BARRA CEREAIS NUTRY MORANGOCHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 87,
+          "product": {
+            "id": 51,
+            "eanCode": "07896006797944",
+            "name": "FEIJAO PRETO CAMIL 380G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 88,
+          "product": {
+            "id": 52,
+            "eanCode": "07896006797920",
+            "name": "FEIJAO CARIOCA CAMIL 380G",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 89,
+          "product": {
+            "id": 53,
+            "eanCode": "07891143011090",
+            "name": "FATIADOS POLENGHI PRATO LIGHT 144G",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 90,
+          "product": {
+            "id": 53,
+            "eanCode": "07891143011090",
+            "name": "FATIADOS POLENGHI PRATO LIGHT 144G",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 91,
+          "product": {
+            "id": 53,
+            "eanCode": "07891143011090",
+            "name": "FATIADOS POLENGHI PRATO LIGHT 144G",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

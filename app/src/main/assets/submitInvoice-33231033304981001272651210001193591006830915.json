@@ -1,0 +1,193 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231033304981001272651210001193591006830915",
+      "date": "2023-10-19T17:59:48-03:00",
+      "market": {
+        "cnpj": "33304981001272",
+        "name": "SUPERMERCADOS MUNDIAL LTDA",
+        "fantasyName": "SUPERMERCADOS MUNDIAL - BOTAFOGO",
+        "address": {
+          "name": "Rua Voluntarios da Patria, 24",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22270010",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "0021317003"
+      },
+      "products": [
+        {
+          "id": 161,
+          "product": {
+            "id": 88,
+            "eanCode": "07804320301174",
+            "name": "VINHO BCO CHI C.DEL DIABLO S.BLANC GF 750ML",
+            "unitType": "UN"
+          },
+          "price": 49.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 162,
+          "product": {
+            "id": 89,
+            "eanCode": "07898531546066",
+            "name": "RAMEQUIM PORCELANA 320ML",
+            "unitType": "UN"
+          },
+          "price": 10.5,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 163,
+          "product": {
+            "id": 89,
+            "eanCode": "07898531546066",
+            "name": "RAMEQUIM PORCELANA 320ML",
+            "unitType": "UN"
+          },
+          "price": 10.5,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 164,
+          "product": {
+            "id": 90,
+            "eanCode": "07891095008452",
+            "name": "POPCORN YOKI MICROONDAS MANTEIGA CINEMA 100G",
+            "unitType": "UN"
+          },
+          "price": 3.96,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 165,
+          "product": {
+            "id": 90,
+            "eanCode": "07891095008452",
+            "name": "POPCORN YOKI MICROONDAS MANTEIGA CINEMA 100G",
+            "unitType": "UN"
+          },
+          "price": 3.96,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 166,
+          "product": {
+            "id": 91,
+            "eanCode": "07898940757015",
+            "name": "CEBOLA PICADA OKKER 200G",
+            "unitType": "UN"
+          },
+          "price": 4.95,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 167,
+          "product": {
+            "id": 92,
+            "eanCode": "07898924867013",
+            "name": "ALHO TRITURADO OKKER 200G",
+            "unitType": "UN"
+          },
+          "price": 4.95,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 168,
+          "product": {
+            "id": 93,
+            "eanCode": "07892840253646",
+            "name": "BATATA E.CHIPS RUFFLES SAL 167G",
+            "unitType": "UN"
+          },
+          "price": 14.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 169,
+          "product": {
+            "id": 94,
+            "eanCode": "07892840818357",
+            "name": "SALG.E.CHIPS DORITOS NACHO 300G",
+            "unitType": "UN"
+          },
+          "price": 23.5,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 170,
+          "product": {
+            "id": 49,
+            "eanCode": "07891331010546",
+            "name": "BARRA CEREAIS NUTRY AVELACHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 171,
+          "product": {
+            "id": 49,
+            "eanCode": "07891331010546",
+            "name": "BARRA CEREAIS NUTRY AVELACHOCOLATE 66G",
+            "unitType": "UN"
+          },
+          "price": 4.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 172,
+          "product": {
+            "id": 95,
+            "eanCode": "07891048046623",
+            "name": "GELATINA DIET DR.OETKER CEREJA 12G",
+            "unitType": "UN"
+          },
+          "price": 4.28,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 173,
+          "product": {
+            "id": 96,
+            "eanCode": "07622300172992",
+            "name": "GELATINA ZERO ROYAL MARACUJA 12G",
+            "unitType": "UN"
+          },
+          "price": 3.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 174,
+          "product": {
+            "id": 97,
+            "eanCode": "07622300172893",
+            "name": "GELATINA ZERO ROYAL FRAMBOESA 12G",
+            "unitType": "UN"
+          },
+          "price": 3.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

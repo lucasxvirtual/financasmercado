@@ -1,0 +1,85 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652160000709721943410037",
+      "date": "2023-10-05T18:13:52-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 80,
+          "product": {
+            "id": 16,
+            "eanCode": null,
+            "name": "BOLO CORTE SM CASEIRO kg",
+            "unitType": "KG"
+          },
+          "price": 29.99,
+          "quantity": 0.214,
+          "discount": 0.0
+        },
+        {
+          "id": 81,
+          "product": {
+            "id": 22,
+            "eanCode": "7898006890601",
+            "name": "OVOS BRANCO GDE BDJ C/20UN",
+            "unitType": "UN"
+          },
+          "price": 14.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 82,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.99,
+          "quantity": 0.445,
+          "discount": 0.0
+        },
+        {
+          "id": 83,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.99,
+          "quantity": 0.76,
+          "discount": 0.0
+        },
+        {
+          "id": 84,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 2.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

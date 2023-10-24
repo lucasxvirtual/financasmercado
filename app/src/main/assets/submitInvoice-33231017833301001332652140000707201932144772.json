@@ -1,0 +1,265 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652140000707201932144772",
+      "date": "2023-10-21T08:18:59-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 175,
+          "product": {
+            "id": 47,
+            "eanCode": null,
+            "name": "BANANA PRATA",
+            "unitType": "KG"
+          },
+          "price": 7.99,
+          "quantity": 1.22,
+          "discount": 0.0
+        },
+        {
+          "id": 176,
+          "product": {
+            "id": 98,
+            "eanCode": null,
+            "name": "MIX REPOLHO 300G",
+            "unitType": "UN"
+          },
+          "price": 5.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 177,
+          "product": {
+            "id": 42,
+            "eanCode": null,
+            "name": "BROCOLIS AMERICANO UN",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 178,
+          "product": {
+            "id": 99,
+            "eanCode": "7891167011755",
+            "name": "ATUM SOLIDO GOMES DA COSTA LT 170G NATURAL",
+            "unitType": "UN"
+          },
+          "price": 14.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 179,
+          "product": {
+            "id": 100,
+            "eanCode": "7891143011090",
+            "name": "QUEIJO PROC POLENGHI 144G SANDW PRATO LGH",
+            "unitType": "UN"
+          },
+          "price": 13.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 180,
+          "product": {
+            "id": 100,
+            "eanCode": "7891143011090",
+            "name": "QUEIJO PROC POLENGHI 144G SANDW PRATO LGH",
+            "unitType": "UN"
+          },
+          "price": 13.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 181,
+          "product": {
+            "id": 101,
+            "eanCode": "7896496972005",
+            "name": "GRANOLA MAE TERRA 250G TRAD LIGHT",
+            "unitType": "UN"
+          },
+          "price": 15.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 182,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.99,
+          "quantity": 0.94,
+          "discount": 0.0
+        },
+        {
+          "id": 183,
+          "product": {
+            "id": 25,
+            "eanCode": "78909045",
+            "name": "REFRIG COCA COLA GF 250ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 1.89,
+          "quantity": 12.0,
+          "discount": 0.0
+        },
+        {
+          "id": 184,
+          "product": {
+            "id": 67,
+            "eanCode": "7896209401181",
+            "name": "PAO FORMA NUTRELLA VITTA PC 450G GRAOS/CASTANHAS",
+            "unitType": "UN"
+          },
+          "price": 15.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 185,
+          "product": {
+            "id": 17,
+            "eanCode": "7896002306348",
+            "name": "PAO FORMA PLUS VITA 480G TRAD",
+            "unitType": "UN"
+          },
+          "price": 7.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 186,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.34,
+          "discount": 0.0
+        },
+        {
+          "id": 187,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.242,
+          "discount": 0.0
+        },
+        {
+          "id": 188,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.328,
+          "discount": 0.0
+        },
+        {
+          "id": 189,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.26,
+          "discount": 0.0
+        },
+        {
+          "id": 190,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.248,
+          "discount": 0.0
+        },
+        {
+          "id": 191,
+          "product": {
+            "id": 76,
+            "eanCode": "7891515614072",
+            "name": "FILE PEITO FRANGO PERDIGAO BDJ 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 192,
+          "product": {
+            "id": 76,
+            "eanCode": "7891515614072",
+            "name": "FILE PEITO FRANGO PERDIGAO BDJ 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 193,
+          "product": {
+            "id": 22,
+            "eanCode": "7898006890601",
+            "name": "OVOS BRANCO GDE BDJ C/20UN",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 194,
+          "product": {
+            "id": 1,
+            "eanCode": "7898939631425",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 7.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,349 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652110000716761850462733",
+      "date": "2023-10-17T09:50:00-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 117,
+          "product": {
+            "id": 65,
+            "eanCode": "7896283000157",
+            "name": "GRANOLA JASMINE PCH 250G TRADICIONAL",
+            "unitType": "UN"
+          },
+          "price": 16.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 118,
+          "product": {
+            "id": 66,
+            "eanCode": null,
+            "name": "MAMAO FORMOSA EMB kg",
+            "unitType": "KG"
+          },
+          "price": 13.98,
+          "quantity": 0.406,
+          "discount": 0.0
+        },
+        {
+          "id": 119,
+          "product": {
+            "id": 47,
+            "eanCode": null,
+            "name": "BANANA PRATA",
+            "unitType": "KG"
+          },
+          "price": 6.99,
+          "quantity": 0.98,
+          "discount": 0.0
+        },
+        {
+          "id": 120,
+          "product": {
+            "id": 67,
+            "eanCode": "7896209401181",
+            "name": "PAO FORMA NUTRELLA VITTA PC 450G GRAOS/CASTANHAS",
+            "unitType": "UN"
+          },
+          "price": 15.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 121,
+          "product": {
+            "id": 68,
+            "eanCode": null,
+            "name": "ALHO kg",
+            "unitType": "KG"
+          },
+          "price": 17.9,
+          "quantity": 0.045,
+          "discount": 0.0
+        },
+        {
+          "id": 122,
+          "product": {
+            "id": 69,
+            "eanCode": null,
+            "name": "BETERRABA kg",
+            "unitType": "KG"
+          },
+          "price": 4.99,
+          "quantity": 0.345,
+          "discount": 0.0
+        },
+        {
+          "id": 123,
+          "product": {
+            "id": 70,
+            "eanCode": "7898938976435",
+            "name": "UVA VITORIA BDJ 500G",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 124,
+          "product": {
+            "id": 71,
+            "eanCode": null,
+            "name": "CENOURA kg",
+            "unitType": "KG"
+          },
+          "price": 3.99,
+          "quantity": 0.43,
+          "discount": 0.0
+        },
+        {
+          "id": 125,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 126,
+          "product": {
+            "id": 48,
+            "eanCode": null,
+            "name": "MAMAO PAPAYA UN",
+            "unitType": "UN"
+          },
+          "price": 4.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 127,
+          "product": {
+            "id": 72,
+            "eanCode": "7893500018469",
+            "name": "ARROZ PARB TIO JOAO 1kg TP1",
+            "unitType": "UN"
+          },
+          "price": 7.59,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 128,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 129,
+          "product": {
+            "id": 73,
+            "eanCode": null,
+            "name": "MACA ARGENTINA RED kg",
+            "unitType": "KG"
+          },
+          "price": 17.9,
+          "quantity": 0.79,
+          "discount": 0.0
+        },
+        {
+          "id": 130,
+          "product": {
+            "id": 42,
+            "eanCode": null,
+            "name": "BROCOLIS AMERICANO UN",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 131,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.59,
+          "quantity": 0.54,
+          "discount": 0.0
+        },
+        {
+          "id": 132,
+          "product": {
+            "id": 22,
+            "eanCode": "7898006890601",
+            "name": "OVOS BRANCO GDE BDJ C/20UN",
+            "unitType": "UN"
+          },
+          "price": 10.45,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 133,
+          "product": {
+            "id": 74,
+            "eanCode": "7897569402757",
+            "name": "PALMITO PUPUNHA DA BEIRA 300G PICADO",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 134,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.244,
+          "discount": 0.0
+        },
+        {
+          "id": 135,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.25,
+          "discount": 0.0
+        },
+        {
+          "id": 136,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.24,
+          "discount": 0.0
+        },
+        {
+          "id": 137,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.298,
+          "discount": 0.0
+        },
+        {
+          "id": 138,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.242,
+          "discount": 0.0
+        },
+        {
+          "id": 139,
+          "product": {
+            "id": 75,
+            "eanCode": "7896914001652",
+            "name": "PAP HIG F DUPLA COTTON 30M C/4 COTTON",
+            "unitType": "UN"
+          },
+          "price": 7.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 140,
+          "product": {
+            "id": 76,
+            "eanCode": "7891515614072",
+            "name": "FILE PEITO FRANGO PERDIGAO BDJ 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 141,
+          "product": {
+            "id": 77,
+            "eanCode": "7898215151722",
+            "name": "LEITE UHT DESN PIRACANJUBA CX 1L C/ TAMPA",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 3.0,
+          "discount": 0.0
+        },
+        {
+          "id": 142,
+          "product": {
+            "id": 25,
+            "eanCode": "78909045",
+            "name": "REFRIG COCA COLA GF 250ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 1.89,
+          "quantity": 12.0,
+          "discount": 0.0
+        },
+        {
+          "id": 143,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 10.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

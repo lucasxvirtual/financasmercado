@@ -1,0 +1,97 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230917833301001332652210000686239138193330",
+      "date": "2023-09-24T17:36:46-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 32,
+          "product": {
+            "id": 1,
+            "eanCode": null,
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 3.0,
+          "discount": 0.0
+        },
+        {
+          "id": 33,
+          "product": {
+            "id": 21,
+            "eanCode": "7899970400902",
+            "name": "CHOC BARRA HERSHEYS SP DARK85G 60 CACAU TRADIC",
+            "unitType": "UN"
+          },
+          "price": 7.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 34,
+          "product": {
+            "id": 22,
+            "eanCode": "7898006890601",
+            "name": "OVOS BRANCO GDE BDJ C/20UN",
+            "unitType": "UN"
+          },
+          "price": 10.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 35,
+          "product": {
+            "id": 23,
+            "eanCode": "7891025115656",
+            "name": "BEB LACTEA UHT YOPRO 15G PROT250ML CHOC ZR LACTOSE",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 36,
+          "product": {
+            "id": 24,
+            "eanCode": "7891000241615",
+            "name": "IOGURTE GREGO NESTLE BDJ 360G LIGHT MORANGO",
+            "unitType": "UN"
+          },
+          "price": 9.15,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 37,
+          "product": {
+            "id": 25,
+            "eanCode": "78909045",
+            "name": "REFRIG COCA COLA GF 250ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 1.89,
+          "quantity": 12.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

@@ -1,0 +1,325 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230917833301001332652100001084411427869589",
+      "date": "2023-09-22T08:37:05-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 55,
+          "product": {
+            "id": 17,
+            "eanCode": "7896002306348",
+            "name": "PAO FORMA PLUS VITA 480G TRAD",
+            "unitType": "UN"
+          },
+          "price": 7.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 56,
+          "product": {
+            "id": 25,
+            "eanCode": "78909045",
+            "name": "REFRIG COCA COLA GF 250ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 1.89,
+          "quantity": 12.0,
+          "discount": 0.0
+        },
+        {
+          "id": 57,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.228,
+          "discount": 0.0
+        },
+        {
+          "id": 58,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.23,
+          "discount": 0.0
+        },
+        {
+          "id": 59,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.24,
+          "discount": 0.0
+        },
+        {
+          "id": 60,
+          "product": {
+            "id": 38,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BOMBOM kg",
+            "unitType": "KG"
+          },
+          "price": 48.9,
+          "quantity": 0.186,
+          "discount": 0.0
+        },
+        {
+          "id": 61,
+          "product": {
+            "id": 39,
+            "eanCode": "7893000005945",
+            "name": "FILE PEITO FRANGO SADIA PCT 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 62,
+          "product": {
+            "id": 39,
+            "eanCode": "7893000005945",
+            "name": "FILE PEITO FRANGO SADIA PCT 1kg",
+            "unitType": "UN"
+          },
+          "price": 16.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 63,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 2.99,
+          "quantity": 0.74,
+          "discount": 0.0
+        },
+        {
+          "id": 64,
+          "product": {
+            "id": 40,
+            "eanCode": "7896005801529",
+            "name": "CAFE ALMOF 3 CORACOES PCT 500G EXTRA FORTE",
+            "unitType": "UN"
+          },
+          "price": 15.76,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 65,
+          "product": {
+            "id": 41,
+            "eanCode": "7509546653280",
+            "name": "CR DENTAL COLGATE T12 CX 180G CLEAN MIN",
+            "unitType": "UN"
+          },
+          "price": 11.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 66,
+          "product": {
+            "id": 41,
+            "eanCode": "7509546653280",
+            "name": "CR DENTAL COLGATE T12 CX 180G CLEAN MIN",
+            "unitType": "UN"
+          },
+          "price": 11.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 67,
+          "product": {
+            "id": 42,
+            "eanCode": null,
+            "name": "BROCOLIS AMERICANO UN",
+            "unitType": "UN"
+          },
+          "price": 9.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 68,
+          "product": {
+            "id": 43,
+            "eanCode": "7891000104613",
+            "name": "IOGURTE GREGO NESTLE BDJ 360G LIGHT MARACUJA",
+            "unitType": "UN"
+          },
+          "price": 9.15,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 69,
+          "product": {
+            "id": 43,
+            "eanCode": "7891000104613",
+            "name": "IOGURTE GREGO NESTLE BDJ 360G LIGHT MARACUJA",
+            "unitType": "UN"
+          },
+          "price": 9.15,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 70,
+          "product": {
+            "id": 44,
+            "eanCode": null,
+            "name": "PRESUNTO COZ SADIA S/CAPA GORDURA FAT BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 31.99,
+          "quantity": 0.135,
+          "discount": 0.0
+        },
+        {
+          "id": 71,
+          "product": {
+            "id": 44,
+            "eanCode": null,
+            "name": "PRESUNTO COZ SADIA S/CAPA GORDURA FAT BDJ kg",
+            "unitType": "KG"
+          },
+          "price": 31.99,
+          "quantity": 0.13,
+          "discount": 0.0
+        },
+        {
+          "id": 72,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 73,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 74,
+          "product": {
+            "id": 45,
+            "eanCode": "7891010974312",
+            "name": "ANTISSEP BUCAL LISTERINE 500ML L+P- COOL MINT",
+            "unitType": "UN"
+          },
+          "price": 25.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 75,
+          "product": {
+            "id": 46,
+            "eanCode": "7891079000229",
+            "name": "MACARRAO INST NISSIN LAMEN 85G GALINHA CAIPIRA",
+            "unitType": "UN"
+          },
+          "price": 2.39,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 76,
+          "product": {
+            "id": 46,
+            "eanCode": "7891079000229",
+            "name": "MACARRAO INST NISSIN LAMEN 85G GALINHA CAIPIRA",
+            "unitType": "UN"
+          },
+          "price": 2.39,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 77,
+          "product": {
+            "id": 47,
+            "eanCode": null,
+            "name": "BANANA PRATA",
+            "unitType": "KG"
+          },
+          "price": 8.9,
+          "quantity": 1.08,
+          "discount": 0.0
+        },
+        {
+          "id": 78,
+          "product": {
+            "id": 48,
+            "eanCode": null,
+            "name": "MAMAO PAPAYA UN",
+            "unitType": "UN"
+          },
+          "price": 4.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 79,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 9.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

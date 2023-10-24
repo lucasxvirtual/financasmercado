@@ -1,0 +1,217 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33230917833301001332652160000702011470230037",
+      "date": "2023-09-27T16:22:58-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 7,
+          "product": {
+            "id": 7,
+            "eanCode": "7894900701609",
+            "name": "REFRIG COCA COLA GF 600ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 5.29,
+          "quantity": 4.0,
+          "discount": 0.0
+        },
+        {
+          "id": 8,
+          "product": {
+            "id": 8,
+            "eanCode": "7896423470994",
+            "name": "BOMBOM TWIX PCT 40G ORIG",
+            "unitType": "UN"
+          },
+          "price": 3.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 9,
+          "product": {
+            "id": 9,
+            "eanCode": "7896269300271",
+            "name": "CONDIM OREGANO MARCA SABOR 3G",
+            "unitType": "UN"
+          },
+          "price": 2.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 10,
+          "product": {
+            "id": 9,
+            "eanCode": "7896269300271",
+            "name": "CONDIM OREGANO MARCA SABOR 3G",
+            "unitType": "UN"
+          },
+          "price": 2.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 11,
+          "product": {
+            "id": 10,
+            "eanCode": null,
+            "name": "MIX VINAGRETE 300G",
+            "unitType": "UN"
+          },
+          "price": 5.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 12,
+          "product": {
+            "id": 10,
+            "eanCode": null,
+            "name": "MIX VINAGRETE 300G",
+            "unitType": "UN"
+          },
+          "price": 5.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 13,
+          "product": {
+            "id": 7,
+            "eanCode": "7894900701609",
+            "name": "REFRIG COCA COLA GF 600ML ZERO",
+            "unitType": "UN"
+          },
+          "price": 5.29,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 14,
+          "product": {
+            "id": 11,
+            "eanCode": "7500435196994",
+            "name": "COND PANTENE BISN 150ML COLAGENO",
+            "unitType": "UN"
+          },
+          "price": 19.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 15,
+          "product": {
+            "id": 12,
+            "eanCode": "7500435196987",
+            "name": "SHAMPOO PANTENE PRO-V FR 300ML COLAGENO",
+            "unitType": "UN"
+          },
+          "price": 32.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 16,
+          "product": {
+            "id": 13,
+            "eanCode": "7896102500608",
+            "name": "MILHO VERDE CONSERVA QUERO LT 170G",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 17,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.274,
+          "discount": 0.0
+        },
+        {
+          "id": 18,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.286,
+          "discount": 0.0
+        },
+        {
+          "id": 19,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.316,
+          "discount": 0.0
+        },
+        {
+          "id": 20,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.258,
+          "discount": 0.0
+        },
+        {
+          "id": 21,
+          "product": {
+            "id": 14,
+            "eanCode": null,
+            "name": "ALCATRA C/MAMIN BOV FRIBOI RESERVA BIFE kg",
+            "unitType": "KG"
+          },
+          "price": 47.98,
+          "quantity": 0.296,
+          "discount": 0.0
+        },
+        {
+          "id": 22,
+          "product": {
+            "id": 1,
+            "eanCode": "7898939631425",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 6.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

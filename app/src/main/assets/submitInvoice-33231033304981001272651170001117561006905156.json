@@ -1,0 +1,49 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231033304981001272651170001117561006905156",
+      "date": "2023-10-20T18:34:27-03:00",
+      "market": {
+        "cnpj": "33304981001272",
+        "name": "SUPERMERCADOS MUNDIAL LTDA",
+        "fantasyName": "SUPERMERCADOS MUNDIAL - BOTAFOGO",
+        "address": {
+          "name": "Rua Voluntarios da Patria, 24",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22270010",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "0021317003"
+      },
+      "products": [
+        {
+          "id": 195,
+          "product": {
+            "id": 102,
+            "eanCode": "00076840002931",
+            "name": "SORVETE BEN JERRYS CRUSH GATEAU 458ML",
+            "unitType": "UN"
+          },
+          "price": 54.5,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 196,
+          "product": {
+            "id": 103,
+            "eanCode": "07500435128957",
+            "name": "COND.PANTENE MICELAR 400ML",
+            "unitType": "UN"
+          },
+          "price": 25.98,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

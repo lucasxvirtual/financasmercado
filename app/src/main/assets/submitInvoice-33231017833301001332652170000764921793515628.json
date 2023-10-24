@@ -1,0 +1,109 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231017833301001332652170000764921793515628",
+      "date": "2023-10-09T16:45:26-03:00",
+      "market": {
+        "cnpj": "17833301001332",
+        "name": "SUPERMERCADOS ALVORADA EIRELI",
+        "fantasyName": "BOTAFOGO",
+        "address": {
+          "name": "PRAIA BOTAFOGO, 340 LOJA B / LOJA C",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "RIO DE JANEIRO",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2137151320"
+      },
+      "products": [
+        {
+          "id": 144,
+          "product": {
+            "id": 78,
+            "eanCode": "80052487",
+            "name": "BOMBOM FERRERO RAFFAELLO C/3 30G",
+            "unitType": "UN"
+          },
+          "price": 9.19,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 145,
+          "product": {
+            "id": 15,
+            "eanCode": null,
+            "name": "BATATA INGLESA kg",
+            "unitType": "KG"
+          },
+          "price": 5.99,
+          "quantity": 0.935,
+          "discount": 0.0
+        },
+        {
+          "id": 146,
+          "product": {
+            "id": 79,
+            "eanCode": "7892840267841",
+            "name": "SNACK EQLIBRI PANETINI UN 40G PRESUNTO DEF",
+            "unitType": "UN"
+          },
+          "price": 4.49,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 147,
+          "product": {
+            "id": 80,
+            "eanCode": "7891000100103",
+            "name": "LEITE COND INT MOCA LT 395G",
+            "unitType": "UN"
+          },
+          "price": 7.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 148,
+          "product": {
+            "id": 81,
+            "eanCode": "7891008122213",
+            "name": "CHOC BARRA GAROTO TALENTO 85G BCO OPERETA",
+            "unitType": "UN"
+          },
+          "price": 4.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        },
+        {
+          "id": 149,
+          "product": {
+            "id": 1,
+            "eanCode": "7898257754790",
+            "name": "SACOLA RECICLAVEL 7kg UN CINZA",
+            "unitType": "UN"
+          },
+          "price": 0.1,
+          "quantity": 2.0,
+          "discount": 0.0
+        },
+        {
+          "id": 150,
+          "product": {
+            "id": 82,
+            "eanCode": "7896046602420",
+            "name": "CUSCUZ SEMI PRONTO CHINEZINHO 450G COCO",
+            "unitType": "UN"
+          },
+          "price": 12.99,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

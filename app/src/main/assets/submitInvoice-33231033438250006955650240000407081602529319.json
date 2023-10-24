@@ -1,0 +1,37 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231033438250006955650240000407081602529319",
+      "date": "2023-10-22T13:15:14-03:00",
+      "market": {
+        "cnpj": "33438250006955",
+        "name": "DROGARIAS PACHECO SA",
+        "fantasyName": "",
+        "address": {
+          "name": "PRAIA DE BOTAFOGO, 406",
+          "neighborhood": "BOTAFOGO",
+          "cep": "22250040",
+          "city": "Rio de Janeiro",
+          "cityCode": 3304557,
+          "uf": "RJ"
+        },
+        "phone": "2132371112"
+      },
+      "products": [
+        {
+          "id": 215,
+          "product": {
+            "id": 113,
+            "eanCode": null,
+            "name": "KIT CENTRUM H 60 30",
+            "unitType": "UN"
+          },
+          "price": 179.9,
+          "quantity": 1.0,
+          "discount": 0.0
+        }
+      ]
+    }
+  },
+  "status": 200
+}

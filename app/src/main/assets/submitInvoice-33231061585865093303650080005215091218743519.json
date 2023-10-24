@@ -1,0 +1,37 @@
+{
+  "payload": {
+    "invoice": {
+      "id": "33231061585865093303650080005215091218743519",
+      "date": "2023-10-07T12:14:41-03:00",
+      "market": {
+        "cnpj": "61585865093303",
+        "name": "RAIA DROGASIL S/A",
+        "fantasyName": "TERESOPOLIS - A",
+        "address": {
+          "name": "AVENIDA FELICIANO SODRE, 171",
+          "neighborhood": "VARZEA",
+          "cep": "25963083",
+          "city": "TERESOPOLIS",
+          "cityCode": 3305802,
+          "uf": "RJ"
+        },
+        "phone": "26431573"
+      },
+      "products": [
+        {
+          "id": 197,
+          "product": {
+            "id": 104,
+            "eanCode": "7891058002602",
+            "name": "DIPIRONA 1G MEG 10'S",
+            "unitType": "UN"
+          },
+          "price": 18.9,
+          "quantity": 1.0,
+          "discount": 5.91
+        }
+      ]
+    }
+  },
+  "status": 200
+}
