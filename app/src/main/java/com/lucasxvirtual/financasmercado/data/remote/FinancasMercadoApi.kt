@@ -8,7 +8,12 @@ import retrofit2.http.POST
 
 interface FinancasMercadoApi {
     @POST("invoice")
-    suspend fun submitInvoice(
+    suspend fun postInvoice(
         @Field("invoiceNumber") invoiceNumber: String
     ): Response<BaseRemoteResponse<SubmitInvoiceResponse>>
+
+    @POST("notification")
+    suspend fun postNotificationToken(
+        @Field("token") token: String
+    ): Response<Unit>
 }

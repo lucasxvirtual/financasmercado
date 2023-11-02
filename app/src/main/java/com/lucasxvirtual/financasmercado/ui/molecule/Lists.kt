@@ -1,5 +1,6 @@
 package com.lucasxvirtual.financasmercado.ui.molecule
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -33,14 +34,17 @@ import androidx.compose.ui.unit.dp
 import com.lucasxvirtual.financasmercado.R
 import com.lucasxvirtual.financasmercado.data.model.Invoice
 import com.lucasxvirtual.financasmercado.data.model.InvoiceSimpleInformation
+import com.lucasxvirtual.financasmercado.extensions.date
 import com.lucasxvirtual.financasmercado.extensions.formatDate
 import com.lucasxvirtual.financasmercado.extensions.formattedQuantity
 import com.lucasxvirtual.financasmercado.extensions.openAddressInMap
 import com.lucasxvirtual.financasmercado.extensions.round
 import com.lucasxvirtual.financasmercado.ui.clickableSingle
+import java.util.Calendar
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun InvoiceList(
+fun InvoicesList(
     invoice: Invoice,
     onInvoiceItemClicked: (Int, String) -> Unit,
     modifier: Modifier = Modifier
@@ -52,12 +56,12 @@ fun InvoiceList(
     val density = LocalDensity.current
     val maxPrice = stringResource(
         id = R.string.price_no_currency_format,
-        invoice.productInvoiceList.maxBy { it.roundedTotalPrice }.roundedTotalPrice
+        invoice.productInvoiceList.maxByOrNull { it.roundedTotalPrice }?.roundedTotalPrice ?: 0.0
     )
     LazyColumn(
         modifier = modifier
     ) {
-        item {
+        stickyHeader {
             Card(
                 elevation = CardDefaults.cardElevation(0.dp),
                 shape = RoundedCornerShape(0.dp),
@@ -222,11 +226,16 @@ fun InvoiceList(
 }
 
 @Composable
-fun InvoiceList(
+fun InvoicesList(
     invoiceList: List<InvoiceSimpleInformation>,
     onInvoiceClicked: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val week = remember {
+        val calendar = Calendar.getInstance()
+        calendar.add(Calendar.DAY_OF_YEAR, -6)
+        calendar.time
+    }
     LazyColumn(modifier = modifier) {
         item {
             Row(
@@ -267,8 +276,13 @@ fun InvoiceList(
                         .clickableSingle { onInvoiceClicked(it.id) }
                         .padding(horizontal = 20.dp, vertical = 16.dp)
                 ) {
+                    val format = if (week.time < (it.date.date()?.time ?: 0)) {
+                        "EEEE 'às' HH'h'"
+                    } else {
+                        "d/MMM 'às' HH'h'"
+                    }
                     Text(
-                        text = it.date.formatDate(),
+                        text = it.date.formatDate(format),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.primary,
                         maxLines = 1,

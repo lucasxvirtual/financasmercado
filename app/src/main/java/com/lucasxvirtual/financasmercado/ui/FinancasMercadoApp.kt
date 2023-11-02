@@ -13,20 +13,29 @@ import com.lucasxvirtual.financasmercado.ui.importinvoice.ImportInvoiceScreen
 import com.lucasxvirtual.financasmercado.ui.invoice.InvoiceScreen
 import com.lucasxvirtual.financasmercado.ui.month.MonthScreen
 import com.lucasxvirtual.financasmercado.ui.product.ProductScreen
+import com.lucasxvirtual.financasmercado.ui.settings.SettingsScreen
+import com.lucasxvirtual.financasmercado.ui.tutorial.TutorialScreen
 
 @Composable
-fun FinancasMercadoApp() {
+fun FinancasMercadoApp(hasSeenTutorial: Boolean) {
     val navController = rememberNavController()
     FinancasMercadoNavHost(
-        navController = navController
+        navController = navController,
+        hasSeenTutorial = hasSeenTutorial
     )
 }
 
 @Composable
 fun FinancasMercadoNavHost(
-    navController: NavHostController
+    navController: NavHostController,
+    hasSeenTutorial: Boolean
 ) {
-    NavHost(navController = navController, startDestination = "home") {
+    val startDestination = if (hasSeenTutorial) {
+        "home"
+    } else {
+        "tutorial"
+    }
+    NavHost(navController = navController, startDestination = startDestination) {
         composable("home") {
             HomeScreen(
                 onInvoiceClicked = {
@@ -37,16 +46,22 @@ fun FinancasMercadoNavHost(
                     navController.navigate("product/$id/$encodedName")
                 },
                 onImportClicked = {
-                    navController.navigate("importinvoice")
+                    navController.navigate("importinvoice/$it")
                 },
                 onMonthClicked = {
                     navController.navigate("month/$it")
+                },
+                onSettingsClicked = {
+                    navController.navigate("settings")
                 }
             )
         }
-        composable("importinvoice") {
-            ImportInvoiceScreen {
-                if (navController.currentDestination?.route == "importinvoice") {
+        composable(
+            "importinvoice/{hasCameraPermission}",
+            arguments = listOf(navArgument("hasCameraPermission") {type = NavType.BoolType})
+        ) {
+            ImportInvoiceScreen(hasCameraPermission = it.arguments?.getBoolean("hasCameraPermission") ?: false) {
+                if (navController.currentDestination?.route?.startsWith("importinvoice") == true) {
                     navController.popBackStack()
                 }
             }
@@ -90,6 +105,22 @@ fun FinancasMercadoNavHost(
                     navController.navigate("invoice/$it")
                 }
             ) {
+                navController.popBackStack()
+            }
+        }
+        composable(
+            "tutorial"
+        ) {
+            TutorialScreen {
+                navController.navigate("home") {
+                    popUpTo(navController.currentBackStackEntry?.destination?.route ?: return@navigate) {
+                        inclusive = true
+                    }
+                }
+            }
+        }
+        composable("settings") {
+            SettingsScreen {
                 navController.popBackStack()
             }
         }

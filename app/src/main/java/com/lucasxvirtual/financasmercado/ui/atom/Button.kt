@@ -53,13 +53,17 @@ fun SecondaryButton(
     action: () -> Unit,
     modifier: Modifier = Modifier,
     padding: PaddingValues? = null,
-    enabled: Boolean = true
+    enabled: Boolean = true,
+    borderColor: Color = MaterialTheme.colorScheme.primary,
+    color: Color = MaterialTheme.colorScheme.primary
 ) {
     OutlinedButton(
         text = text,
         action = action,
         padding = padding,
         enabled = enabled,
+        borderColor = borderColor,
+        color = color,
         modifier = modifier.height(defaultHeight)
     )
 }

@@ -34,7 +34,7 @@
     <string name="total_spent_with_product_format">Total gasto com produto: R$%,.2f</string>
     <string name="data_based_on_last_3_month">Dados com base nos últimos 3 meses.</string>
     <string name="last_purchases">Últimas compras</string>
-    <string name="price_float">Variação de Preço</string>
+    <string name="price_float">Última Variação de Preço</string>
     <string name="total">Total</string>
     <string name="unit_value">vl. unit/</string>
     <string name="unit_value_no_slash">VL. Unit</string>
@@ -43,4 +43,26 @@
     <string name="add_items_importing_invoices">Adicione itens importando Notas Fiscais</string>
     <string name="no_data_last_three_months">Nenhum dado nos últimos 3 meses</string>
     <string name="app_name_break_line">MERCADO\nFINANÇAS</string>
+    <string name="enable_camera_access">Habilite o acesso à câmera</string>
+    <string name="next">Próximo</string>
+    <string name="finish">Concluir</string>
+    <string name="activate_notifications">Ativar notificações</string>
+    <string name="settings">Configurações</string>
+    <string name="disable_notification_at_any_moment">Você pode desativa-las a qualquer momento no menu de configuração.</string>
+    <string name="step_four">Bônus: Ative as Notificações</string>
+    <string name="enable_notification_copy">As Notas Fiscais podem demorar a ficar disponíveis no app após a importação, caso queira ative as notificações para que possamos te informar quando estiver disponível.</string>
+    <string name="step_two">Segundo Passo: Não tem segundo passo! :)</string>
+    <string name="step_two_copy">Após importar as Notas Fiscais você ja consegue visualizar seus gastos:</string>
+    <string name="step_two_monthly">• Mensais.</string>
+    <string name="step_two_product">• Por produto.</string>
+    <string name="step_two_invoice">• Por Nota Fiscal.</string>
+    <string name="step_two_analyze">Alem disso ainda pode analisar o comportamento de variação de preço dos produtos.</string>
+    <string name="step_one">Primeiro Passo: Importe suas Notas Fiscais!</string>
+    <string name="step_one_copy">Você pode importar apontando a camera para a chave de acesso da Nota Fiscal Eletrônica.</string>
+    <string name="step_one_alt_import">Se preferir também pode digitar manualmente. Só não esqueça de importar todas as Notas Fiscais, isso é crucial para o funcionamento do app.</string>
+    <string name="welcome">Bem Vindo ao Mercado Finanças!</string>
+    <string name="welcome_copy">Se você baixou esse app é porque está decidido a administrar e reduzir os gastos com mercado.\nVamos ver como o Mercado Finanças pode te ajudar:</string>
+    <string name="welcome_control_monthly_spend">• Controlar seus gastos mensais.</string>
+    <string name="welcome_price_float">• Verificar variação de preços de produtos.</string>
+    <string name="welcome_quotation">• Cotar compras com base nos últimos valores cadastrados por usuários (em breve).</string>
 </resources>

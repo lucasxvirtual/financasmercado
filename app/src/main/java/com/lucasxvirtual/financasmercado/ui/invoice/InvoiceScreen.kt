@@ -5,15 +5,17 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.lucasxvirtual.financasmercado.R
-import com.lucasxvirtual.financasmercado.ui.molecule.InvoiceList
+import com.lucasxvirtual.financasmercado.ui.atom.Ad
+import com.lucasxvirtual.financasmercado.ui.molecule.InvoicesList
 import com.lucasxvirtual.financasmercado.ui.molecule.TopBar
 import com.lucasxvirtual.financasmercado.viewmodels.InvoiceViewModel
 
@@ -25,7 +27,7 @@ fun InvoiceScreen(
     onBackPressed: () -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(rememberTopAppBarState())
+    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
     Scaffold(
         topBar = {
             TopBar(
@@ -33,7 +35,8 @@ fun InvoiceScreen(
                 scrollBehavior = scrollBehavior,
                 onBackPressed = onBackPressed
             )
-        }
+        },
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection)
     ) {
         InvoiceScreen(
             uiState = uiState,
@@ -51,10 +54,12 @@ fun InvoiceScreen(
 ) {
     Column(modifier = modifier) {
         uiState.invoice?.let {
-            InvoiceList(
+            InvoicesList(
                 invoice = it,
-                onInvoiceItemClicked
+                onInvoiceItemClicked,
+                modifier = Modifier.weight(1f)
             )
         }
+        Ad(Modifier.align(Alignment.CenterHorizontally))
     }
 }

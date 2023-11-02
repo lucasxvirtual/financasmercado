@@ -10,10 +10,13 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.lucasxvirtual.financasmercado.ui.molecule.InvoiceList
+import com.lucasxvirtual.financasmercado.ui.atom.Ad
+import com.lucasxvirtual.financasmercado.ui.molecule.InvoicesList
 import com.lucasxvirtual.financasmercado.ui.molecule.TopBar
 import com.lucasxvirtual.financasmercado.viewmodels.MonthViewModel
 
@@ -25,7 +28,7 @@ fun MonthScreen(
     onBackPressed: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
+    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
     Scaffold(
         topBar = {
             TopBar(
@@ -33,7 +36,8 @@ fun MonthScreen(
                 scrollBehavior = scrollBehavior,
                 onBackPressed = onBackPressed
             )
-        }
+        },
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection)
     ) {
         MonthScreen(
             uiState = uiState,
@@ -51,12 +55,14 @@ fun MonthScreen(
 ) {
     Card(
         elevation = CardDefaults.cardElevation(0.dp),
-        shape = RoundedCornerShape(0.dp)
+        shape = RoundedCornerShape(0.dp),
+        modifier = Modifier
     ) {
-        InvoiceList(
+        InvoicesList(
             invoiceList = uiState.invoiceList,
             onInvoiceClicked = onInvoiceClicked,
-            modifier = modifier
+            modifier = modifier.weight(1f)
         )
+        Ad(Modifier.align(Alignment.CenterHorizontally))
     }
 }

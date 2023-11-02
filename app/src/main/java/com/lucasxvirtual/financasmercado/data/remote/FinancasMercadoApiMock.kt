@@ -20,10 +20,16 @@ class FinancasMercadoApiMock @Inject constructor(
 
     private val serviceDelay = 1.5.seconds
 
-    override suspend fun submitInvoice(invoiceNumber: String): Response<BaseRemoteResponse<SubmitInvoiceResponse>> {
+    override suspend fun postInvoice(invoiceNumber: String): Response<BaseRemoteResponse<SubmitInvoiceResponse>> {
         return withContext(dispatcher) {
             delay(serviceDelay)
             Response.success(context.assetToObject(MockAssets.SubmitInvoice(invoiceNumber)))
+        }
+    }
+
+    override suspend fun postNotificationToken(token: String): Response<Unit> {
+        return withContext(dispatcher) {
+            Response.success(Unit)
         }
     }
 

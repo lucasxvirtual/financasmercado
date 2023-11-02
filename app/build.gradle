@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -65,6 +66,7 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:2.7.0-alpha03"
 
     // Material Design 3
     implementation 'androidx.compose.material3:material3'
@@ -105,4 +107,14 @@ dependencies {
 
     // To recognize Latin script
     implementation 'com.google.mlkit:text-recognition:16.0.0'
+
+    implementation 'com.google.android.gms:play-services-ads:22.4.0'
+
+    implementation "androidx.core:core-splashscreen:1.0.1"
+
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    implementation platform('com.google.firebase:firebase-bom:32.5.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation "com.google.firebase:firebase-messaging"
 }

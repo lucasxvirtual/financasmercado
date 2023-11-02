@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.FinançasMercado" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.SplashScreen.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary_color</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.FinançasMercado</item>
+    </style>
+    <style name="Theme.FinançasMercado" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

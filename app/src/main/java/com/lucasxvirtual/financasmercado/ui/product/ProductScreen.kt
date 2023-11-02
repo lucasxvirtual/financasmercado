@@ -45,6 +45,7 @@ import androidx.compose.ui.graphics.asComposePath
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -54,6 +55,7 @@ import com.lucasxvirtual.financasmercado.extensions.date
 import com.lucasxvirtual.financasmercado.extensions.dayMonthDate
 import com.lucasxvirtual.financasmercado.extensions.formatDate
 import com.lucasxvirtual.financasmercado.extensions.formattedQuantity
+import com.lucasxvirtual.financasmercado.ui.atom.Ad
 import com.lucasxvirtual.financasmercado.ui.atom.DefaultCard
 import com.lucasxvirtual.financasmercado.ui.clickableSingle
 import com.lucasxvirtual.financasmercado.ui.molecule.EmptyLast3MonthsPlaceholder
@@ -71,7 +73,7 @@ fun ProductScreen(
     onBackPressed: () -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
+    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
     Scaffold(
         topBar = {
             TopBar(
@@ -79,7 +81,8 @@ fun ProductScreen(
                 scrollBehavior = scrollBehavior,
                 onBackPressed = onBackPressed
             )
-        }
+        },
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection)
     ) {
         ProductScreen(
             uiState = uiState,
@@ -118,6 +121,7 @@ fun ProductScreen(
                 onInvoiceClicked
             )
         }
+        Ad(Modifier.align(Alignment.CenterHorizontally))
     }
 }
 
@@ -178,18 +182,14 @@ fun ColumnScope.Filled(
 ) {
     val priceMostExpensive = uiState.mostExpensivePurchase.productInvoice.price
     val priceLeastExpensive = uiState.leastExpensivePurchase.productInvoice.price
-    val dateMostExpensive = uiState.mostExpensivePurchase.date.date()?.time ?: 0
-    val dateLeastExpensive = uiState.leastExpensivePurchase.date.date()?.time ?: 0
-    val percentage = if (dateMostExpensive > dateLeastExpensive) {
-        (priceMostExpensive - priceLeastExpensive) * 100 / priceLeastExpensive
-    } else {
-        (priceLeastExpensive - priceMostExpensive) * 100 / priceMostExpensive
-    }
     var bestPriceMarked by remember {
         mutableIntStateOf(-1)
     }
     var worstPriceMarked by remember {
         mutableIntStateOf(-1)
+    }
+    if (priceLeastExpensive == priceMostExpensive) {
+        worstPriceMarked = -2
     }
     Text(
         text = stringResource(R.string.data_based_on_last_3_month),
@@ -208,37 +208,38 @@ fun ColumnScope.Filled(
             xValues = uiState.productInvoiceList.sortedBy { it.date.date() }.map { it.date },
             yValues = uiState.productInvoiceList.sortedBy { it.date.date() }.map { it.productInvoice.price },
         )
-    }
-
-    Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.Center
-    ) {
-        PriceContainer(
-            title = stringResource(R.string.best_price),
-            price = priceLeastExpensive,
-            date = uiState.leastExpensivePurchase.date
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
+        ) {
+            PriceContainer(
+                title = stringResource(R.string.best_price),
+                price = priceLeastExpensive,
+                date = uiState.leastExpensivePurchase.date
+            )
+            Spacer(modifier = Modifier.width(40.dp))
+            PriceContainer(
+                title = stringResource(R.string.worst_price),
+                price = priceMostExpensive,
+                date = uiState.mostExpensivePurchase.date
+            )
+        }
+        val lastPrice = uiState.productInvoiceList.first().productInvoice.price
+        val beforeLastPrice = uiState.productInvoiceList.first { it.productInvoice.price != lastPrice }.productInvoice.price
+        val percentage = (lastPrice - beforeLastPrice) * 100 / beforeLastPrice
+        Text(
+            text = stringResource(R.string.price_float),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
         )
-        Spacer(modifier = Modifier.width(40.dp))
-        PriceContainer(
-            title = stringResource(R.string.worst_price),
-            price = priceMostExpensive,
-            date = uiState.mostExpensivePurchase.date
+        Text(
+            text = stringResource(id = R.string.percent_format, percentage),
+            style = MaterialTheme.typography.headlineMedium,
+            color = if (percentage > 0) Crimson else Green,
+            modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }
-
-    Text(
-        text = stringResource(R.string.price_float),
-        style = MaterialTheme.typography.bodyMedium,
-        color = MaterialTheme.colorScheme.primary,
-        modifier = Modifier.align(Alignment.CenterHorizontally)
-    )
-    Text(
-        text = stringResource(id = R.string.percent_format, percentage),
-        style = MaterialTheme.typography.headlineMedium,
-        color = if (percentage > 0) Crimson else Green,
-        modifier = Modifier.align(Alignment.CenterHorizontally)
-    )
 
     val quantityText = uiState.totalQuantity.formattedQuantity(uiState.unityType)
     Text(

@@ -12,6 +12,7 @@ import com.lucasxvirtual.financasmercado.data.remote.RemoteDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.single
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Named
@@ -76,12 +77,53 @@ class Repository @Inject constructor(
         }
     }
 
+    suspend fun onNewNotificationToken(token: String) {
+        withContext(dispatcher) {
+            try {
+                if (remoteDataSource.postNotificationToken(token)) {
+                    localDataSource.clearNonSentNotificationToken()
+                } else {
+                    throw Exception()
+                }
+            } catch (e: Exception) {
+                // TODO: log to analytics
+                localDataSource.saveNonSentNotificationToken(token)
+            }
+        }
+    }
+
+    suspend fun checkForNotificationTokenToSend() {
+        val token = localDataSource.getNonSentNotificationToken().single()
+        if (token != null) {
+            onNewNotificationToken(token)
+        }
+    }
+
     suspend fun clear() {
         withContext(dispatcher) {
             localDataSource.clear()
         }
     }
 
+    suspend fun saveHasSeenTutorial() {
+        withContext(dispatcher) {
+            localDataSource.saveHasSeenTutorial()
+        }
+    }
+
+    fun hasSeenTutorial(): Flow<Boolean> {
+        return localDataSource.hasSeenTutorial()
+    }
+
+    suspend fun saveNotificationEnabled(enabled: Boolean) {
+        withContext(dispatcher) {
+            localDataSource.saveNotificationEnabled(enabled)
+        }
+    }
+
+    fun isNotificationEnabled(): Flow<Boolean> {
+        return localDataSource.isNotificationEnabled()
+    }
     private fun joinProducts(productList: List<ProductInvoice>) : List<ProductInvoice> {
         return productList
             .groupBy { (it.product.eanCode ?: it.product.name) }

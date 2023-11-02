@@ -1,8 +1,13 @@
 package com.lucasxvirtual.financasmercado.ui.importinvoice
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.util.Log
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
 import androidx.camera.view.LifecycleCameraController
 import androidx.camera.view.PreviewView
@@ -66,6 +71,7 @@ import com.lucasxvirtual.financasmercado.R
 import com.lucasxvirtual.financasmercado.extensions.getAllInvoicesIds
 import com.lucasxvirtual.financasmercado.extensions.isValidInvoiceNumber
 import com.lucasxvirtual.financasmercado.ui.MaskVisualTransformation
+import com.lucasxvirtual.financasmercado.ui.atom.Ad
 import com.lucasxvirtual.financasmercado.ui.atom.PrimaryButton
 import com.lucasxvirtual.financasmercado.ui.theme.FinancasMercadoTheme
 import com.lucasxvirtual.financasmercado.viewmodels.ImportInvoiceViewModel
@@ -75,6 +81,7 @@ import kotlin.time.Duration.Companion.seconds
 @Composable
 fun ImportInvoiceScreen(
     viewModel: ImportInvoiceViewModel = hiltViewModel(),
+    hasCameraPermission: Boolean,
     onBackPressed: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -83,7 +90,8 @@ fun ImportInvoiceScreen(
         viewModel::submitAccessKey,
         viewModel::submitAll,
         viewModel::onDialogShown,
-        onBackPressed
+        onBackPressed,
+        hasCameraPermission
     )
 }
 
@@ -93,7 +101,8 @@ fun ImportInvoiceScreen(
     submitAccessKey: (String) -> Unit = {},
     submitAll: (List<String>?) -> Unit = {},
     onDialogShown: () -> Unit = {},
-    onBackPressed: () -> Unit = {}
+    onBackPressed: () -> Unit = {},
+    hasCameraPermission: Boolean
 ) {
     val context = LocalContext.current
     val lifecycleOwner: LifecycleOwner = LocalLifecycleOwner.current
@@ -115,14 +124,29 @@ fun ImportInvoiceScreen(
     }
 
     var mode by rememberSaveable {
-        mutableStateOf(InsertType.CAMERA)
-//        mutableStateOf(InsertType.TYPING)
+        if (hasCameraPermission) {
+            mutableStateOf(InsertType.CAMERA)
+        } else {
+            mutableStateOf(InsertType.TYPING)
+        }
     }
 
     val focusRequester = remember { FocusRequester() }
 
     var showWhereIsDialog by rememberSaveable {
         mutableStateOf(false)
+    }
+
+    val permissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) {
+        if (!it) {
+            mode = mode.switch()
+            Toast.makeText(
+                context,
+                context.getString(R.string.enable_camera_access),
+                Toast.LENGTH_SHORT).show()
+        }
     }
 
     if (uiState.showDialog) {
@@ -266,6 +290,13 @@ fun ImportInvoiceScreen(
                 text = buttonText,
                 action = {
                     mode = mode.switch()
+                    if (mode == InsertType.CAMERA) {
+                        val permissionCheckResult =
+                            ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA)
+                        if (permissionCheckResult != PackageManager.PERMISSION_GRANTED) {
+                            permissionLauncher.launch(Manifest.permission.CAMERA)
+                        }
+                    }
                 },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -282,6 +313,7 @@ fun ImportInvoiceScreen(
                         .fillMaxWidth()
                         .padding(20.dp)
                 )
+            Ad(Modifier.align(Alignment.CenterHorizontally))
 //            }
         }
         IconButton(

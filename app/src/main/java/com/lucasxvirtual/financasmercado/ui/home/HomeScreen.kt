@@ -4,7 +4,6 @@ import android.Manifest
 import android.content.pm.PackageManager
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -15,7 +14,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -25,8 +23,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -34,8 +35,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -48,37 +49,56 @@ import com.lucasxvirtual.financasmercado.data.model.MonthlyReport
 import com.lucasxvirtual.financasmercado.data.model.SpentOnProductReport
 import com.lucasxvirtual.financasmercado.extensions.monthDate
 import com.lucasxvirtual.financasmercado.extensions.round
+import com.lucasxvirtual.financasmercado.ui.atom.Ad
 import com.lucasxvirtual.financasmercado.ui.atom.PrimaryButton
 import com.lucasxvirtual.financasmercado.ui.clickableSingle
 import com.lucasxvirtual.financasmercado.ui.molecule.EmptyPlaceholder
-import com.lucasxvirtual.financasmercado.ui.molecule.InvoiceList
+import com.lucasxvirtual.financasmercado.ui.molecule.HomeTopBar
+import com.lucasxvirtual.financasmercado.ui.molecule.InvoicesList
 import com.lucasxvirtual.financasmercado.viewmodels.HomeScreenViewModel
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     viewModel: HomeScreenViewModel = hiltViewModel(),
     onInvoiceClicked: (String) -> Unit = {},
     onInvoiceItemClicked: (Int, String) -> Unit = { _, _ -> },
-    onImportClicked: () -> Unit = {},
-    onMonthClicked: (String) -> Unit = {}
+    onImportClicked: (Boolean) -> Unit = {},
+    onMonthClicked: (String) -> Unit = {},
+    onSettingsClicked: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState(HomeUIState.LastInvoice())
-    HomeScreen(
-        uiState = uiState,
-        onImportClicked = onImportClicked,
-        onInvoiceItemClicked = onInvoiceItemClicked,
-        onInvoiceClicked = onInvoiceClicked,
-        onFilterItemClicked = viewModel::onFilterItemClicked,
-        onMonthClicked = onMonthClicked
-    )
+    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
+    Scaffold(
+        topBar = {
+            HomeTopBar(
+                scrollBehavior = scrollBehavior,
+                onSettingsPressed = onSettingsClicked
+            )
+        },
+        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection)
+    ) {
+        HomeScreen(
+            uiState = uiState,
+            onImportClicked = onImportClicked,
+            onInvoiceItemClicked = onInvoiceItemClicked,
+            onInvoiceClicked = onInvoiceClicked,
+            onFilterItemClicked = viewModel::onFilterItemClicked,
+            onMonthClicked = onMonthClicked,
+            modifier = Modifier
+                .padding(it)
+                .fillMaxSize()
+        )
+    }
 }
 
 @Composable
 fun HomeScreen(
     uiState: HomeUIState,
+    modifier: Modifier = Modifier,
     onInvoiceClicked: (String) -> Unit = {},
     onInvoiceItemClicked: (Int, String) -> Unit = { _, _ -> },
-    onImportClicked: () -> Unit = {},
+    onImportClicked: (Boolean) -> Unit = {},
     onFilterItemClicked: (FilterItem) -> Unit = {},
     onMonthClicked: (String) -> Unit = {}
 ) {
@@ -87,32 +107,11 @@ fun HomeScreen(
     val permissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) {
-        onImportClicked()
+        onImportClicked(it)
     }
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(modifier = modifier) {
         val lazyListState = rememberLazyListState()
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .wrapContentHeight()
-                .background(color = MaterialTheme.colorScheme.primary)
-                .padding(vertical = 20.dp)
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.ic_logo),
-                contentDescription = null,
-                modifier = Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .size(65.dp)
-            )
-            Text(
-                text = stringResource(R.string.app_name_break_line),
-                style = MaterialTheme.typography.headlineLarge,
-                color = Color.White,
-                modifier = Modifier.align(Alignment.CenterHorizontally)
-            )
-        }
 
         LazyRow(
             state = lazyListState,
@@ -133,8 +132,8 @@ fun HomeScreen(
                         .padding(
                             start = paddingStart,
                             end = paddingEnd,
-                            top = 20.dp,
-                            bottom = 20.dp
+                            top = 8.dp,
+                            bottom = 8.dp
                         )
                         .clip(RoundedCornerShape(4.dp))
                         .border(
@@ -192,7 +191,7 @@ fun HomeScreen(
                 val permissionCheckResult =
                     ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA)
                 if (permissionCheckResult == PackageManager.PERMISSION_GRANTED) {
-                    onImportClicked()
+                    onImportClicked(true)
                 } else {
                     permissionLauncher.launch(Manifest.permission.CAMERA)
                 }
@@ -202,6 +201,7 @@ fun HomeScreen(
                 .padding(all = 20.dp)
                 .align(Alignment.CenterHorizontally)
         )
+        Ad(modifier = Modifier.align(Alignment.CenterHorizontally))
     }
 }
 
@@ -218,7 +218,7 @@ fun ColumnScope.LastInvoice(
                 elevation = CardDefaults.cardElevation(10.dp),
                 shape = RoundedCornerShape(0.dp)
             ) {
-                InvoiceList(
+                InvoicesList(
                     invoice = lastInvoice,
                     onInvoiceItemClicked = onInvoiceItemClicked,
                     modifier = Modifier
@@ -242,7 +242,7 @@ fun ColumnScope.ByInvoiceDate(
                 elevation = CardDefaults.cardElevation(10.dp),
                 shape = RoundedCornerShape(0.dp)
             ) {
-                InvoiceList(invoiceList = invoiceList, onInvoiceClicked = onInvoiceClicked)
+                InvoicesList(invoiceList = invoiceList, onInvoiceClicked = onInvoiceClicked)
             }
         }
     }
@@ -292,7 +292,7 @@ fun ColumnScope.ByMonth(
                                 CardDefaults.cardColors(),
                             modifier = Modifier
                                 .fillMaxWidth()
-                            .clickable { onMonthClicked(it.date) }
+                                .clickable { onMonthClicked(it.date) }
                         ) {
                             Row(
                                 horizontalArrangement = Arrangement.SpaceBetween,
